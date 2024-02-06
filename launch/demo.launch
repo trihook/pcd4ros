@@ -1,0 +1,7 @@
+<launch>
+  <arg name="out_type" default="screen" />
+
+   <node pkg="pcd4ros" name="demo" type="pub.py" output="$(arg out_type)" required="true"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="cam1" args="0.072 0.638 1.133  -1.6328  0 -3.14 /world /cam1" output="screen" />
+
+</launch>
