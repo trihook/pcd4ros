@@ -11,11 +11,8 @@
 ```shell
 roslaunch pcd4ros demo.launch
 ```
-- using rviz to observe
-```shell
-rviz
-```
-- rviz config under ./resource/demo.rviz
+
+- rviz config under ./conf/pcd4ros.rviz
 
 
 # image

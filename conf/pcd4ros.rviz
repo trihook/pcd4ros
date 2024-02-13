@@ -8,7 +8,6 @@ Panels:
         - /Status1
         - /Grid1
         - /PointCloud21
-        - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
       Splitter Ratio: 0.5
@@ -94,8 +93,6 @@ Visualization Manager:
         All Enabled: false
         cam1:
           Value: true
-        cam2:
-          Value: false
         world:
           Value: true
       Marker Scale: 1
@@ -106,8 +103,6 @@ Visualization Manager:
       Tree:
         world:
           cam1:
-            {}
-          cam2:
             {}
       Update Interval: 0
       Value: true
@@ -154,10 +149,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6447973847389221
+      Pitch: 0.2097974568605423
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.8344497680664062
+      Yaw: 3.3344531059265137
     Saved: ~
 Window Geometry:
   Displays:
