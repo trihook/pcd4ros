@@ -12,8 +12,16 @@ def imgs2pcd(rgb, depth, f, c):
     :param depth:
     :return:
     """
-    color_raw = o3d.io.read_image(rgb)
-    depth_raw = o3d.io.read_image(depth)
+
+
+    if isinstance(rgb, str):
+        color_raw = o3d.io.read_image(rgb)
+        depth_raw = o3d.io.read_image(depth)
+        img = cv2.imread(rgb)
+    else:
+        color_raw = o3d.geometry.Image(rgb)
+        depth_raw = o3d.geometry.Image(depth)
+        img = rgb
 
     rgbd_image = o3d.geometry.RGBDImage.create_from_color_and_depth(color_raw, depth_raw,
                                                                     convert_rgb_to_intensity=False)
